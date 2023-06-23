@@ -12,6 +12,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "airbnb-base",
     "plugin:prettier/recommended",
+    "plugin:storybook/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -26,7 +27,12 @@ module.exports = {
         endOfLine: "auto",
       },
     ],
-    "import/extensions": ["warn", { ts: "never" }],
+    "import/extensions": [
+      "warn",
+      {
+        ts: "never",
+      },
+    ],
     "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": [
       "error",
