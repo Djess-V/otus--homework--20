@@ -17,7 +17,7 @@ jobs:
 
       - name: Install Packages
         run: |
-          npm install
+          npm i --legacy-peer-deps
 
       - name: Lint
         run: |
